@@ -1,0 +1,25 @@
+Mobile Phone Repairing Center
+
+functions-
+
+This Is Application for to raise the query for mobile using web login. and technician allocate to them help. 
+technicians see the tickets and give repaly to them.and also adding the quatation for repair the phone.
+database save the encripted password. 
+technician have the facility to make his status active or inactive mode. if the status is inactive then 
+ticket allocate to next technician 
+In list have the the filier mode.
+
+Steps to run project 
+1. Import Databse in Mysql Which name is mobileapp
+2. Open Eclipse --> open project --> Mobile AppBackend-main 
+	--> open application.properties change user Id password accordingly your Database.
+	--> Run java Code in (java 17)
+2. Java code running in port 8000;
+3. check End points in postman using Importing MobileApp.postman_collection.json file.
+4. open Frontend folder in VS code. --> Run the React Project using npm start.
+5. React code running in port 3000.
+
+
+
+
+

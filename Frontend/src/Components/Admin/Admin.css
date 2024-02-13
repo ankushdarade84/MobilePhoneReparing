@@ -1,0 +1,32 @@
+
+.h{
+    border: 1px solid black;
+flex: 1;
+
+}
+.Container{
+    flex:1;
+    flex-direction: column;
+    border: 1px solid rgb(245, 246, 243);
+    border-radius: 20px 20px;
+}
+.SecondDiv{
+    flex: 1;
+    border: 1px solid black;
+}
+
+table, th, td {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 40px;
+    /* border: 1px solid black; */
+    border-collapse: collapse;
+  }
+
+  .info{
+    margin-top: 5%;
+}
+.modalTable{
+    width: 100%;
+}

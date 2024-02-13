@@ -1,0 +1,35 @@
+.info{
+    margin-top: 5%;
+}
+ /* .modalTable{
+    width: 10px;
+    border: "1px solid red"
+} */
+
+  .label {
+    margin-top: 2%;
+    width: 30%;
+    padding: 2% 0% 2% 3%;
+  }
+  .value{
+    margin-top: 2%;
+    width: 80%;
+    padding: 0% 0% 0% 3%;
+  }
+
+.componentTable{
+    width: 80%;
+}
+.componentTable td,th{
+    padding: 0% 0% 0% 2%;
+    margin-top: 2%;
+}
+/* .modalTable tbody tr td{
+    border: "1px solid blue"
+} */
+/* .modalTableRow{
+    border: "1px solid blue"
+} */
+/* .modal-body{
+  background-color: aqua;  
+} */ 

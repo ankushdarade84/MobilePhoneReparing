@@ -1,0 +1,438 @@
+{
+	"info": {
+		"_postman_id": "069cd79c-13d8-4fc3-a245-7d5ba01800bf",
+		"name": "MobileApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26711541"
+	},
+	"item": [
+		{
+			"name": "User signUp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"name\":\"Amruta\",\r\n    \"address\":\"Nashik\",\r\n    \"email\":\"atdaradeatdarade84@gmail.com\",\r\n    \"mobileNo\":8446231090,\r\n    \"password\":\"Ankush\",\r\n    \"type\":\"User\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/signUp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"signUp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sentTicket",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerId\":1,\r\n    \"mobileModel\":\"samsang j7Prime\",\r\n    \"mobileCompany\":\"Motorola\",\r\n    \"problemDescription\":\"getting error \",\r\n    \"response\":\"get soon\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/sentticket",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"sentticket"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"Pankaj@gmail.com\",\r\n    \"password\": \"Pankaj@123\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ValidateEmail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/ValidateEmail",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"ValidateEmail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ResetPassword",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"Shivam@gmail.com\",\r\n    \"password\": \"Shivam@1234\",\r\n    \"confirmPassword\": \"Shivam@1234\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/resetpassword",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"resetpassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Getuserdetailsbyid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/getdetailsbyid/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"getdetailsbyid",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get User by Type",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/getuserbytype/Technician",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"getuserbytype",
+						"Technician"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get ticket by ticketid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/getticketbyid/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"getticketbyid",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get ticket by tech id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/getticketbytechnicainid/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"getticketbytechnicainid",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update Status",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/updateticketstatus/152/Closed",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"updateticketstatus",
+						"152",
+						"Closed"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update Userdetails",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 2,\r\n    \"name\": \"Pankaj2\",\r\n    \"address\": \"Dubai\",\r\n    \"mobileNo\": 7507415444,\r\n    \"email\": \"pankajfg@gmail.com\",\r\n    \"password\": \"Pankaj@123\",\r\n    \"type\": \"User\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/updateuserDetails",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"updateuserDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Ticket",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"mobileModel\":\"Apple\",\r\n    \"mobileType\":\"New\",\r\n    \"problemDescription\":\"getting error J\",\r\n    \"response\":\"get soon\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/updateticket/152",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"updateticket",
+						"152"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tech signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"name\":\"Pankaj\",\r\n    \"address\":\"Nashik\",\r\n    \"email\":\"atdaradeatdarade84@gmail.com\",\r\n    \"mobileNo\":8446231090,\r\n    \"password\":\"Ankush\",\r\n    \"type\":\"User\",\r\n\"status\":\"Active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/techniciansignup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"techniciansignup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createcomponent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"componentTitle\":\"Samsung mic\",\r\n    \"techid\":2,\r\n    \"requiredDate\":\"2015-02-20T19:35:01.000Z\",\r\n    \"inStock\":3,\r\n    \"price\":200\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/createcomponent",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"createcomponent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getallcomponent",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/getallcomponent",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"getallcomponent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ticket Based on company",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/getticketcountbasedoncompany",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"getticketcountbasedoncompany"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get technician part details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/gettechnicianpartdetails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"gettechnicianpartdetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "technicianlogin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"Pankaj@gmail.com\",\r\n    \"password\": \"pankaj\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/technicianlogin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"technicianlogin"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
